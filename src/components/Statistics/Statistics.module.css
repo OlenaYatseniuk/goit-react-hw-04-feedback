@@ -1,0 +1,22 @@
+.statisticsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statisticsItem {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  padding: 5px;
+  background-color: rgb(247, 247, 247);
+  border: 1px solid rgb(184, 174, 174);
+}
+
+.statisticsItem:not(:last-child) {
+  margin-right: 10px;
+}
+
+.statisticsName {
+  margin-bottom: 10px;
+}

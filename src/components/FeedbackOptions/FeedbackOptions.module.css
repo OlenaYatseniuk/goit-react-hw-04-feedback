@@ -1,0 +1,22 @@
+.optionsList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optionsItem:not(:last-child) {
+  margin-right: 20px;
+}
+
+.optionsButton {
+  padding: 5px 10px;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: rgb(108, 202, 171);
+  text-transform: capitalize;
+  scale: 1;
+}
+
+.optionsButton:hover {
+  scale: 1.1;
+}
