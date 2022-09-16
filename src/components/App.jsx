@@ -21,11 +21,6 @@ export function App() {
     stateMap[name](prev => prev + 1);
   };
 
-  const countTotalFeedback = () => {
-    const values = Object.values({ good, bad, neutral });
-    return values.reduce((acc, item) => (acc += item), 0);
-  };
-
   const countPositiveFeedbackPercentage = total => {
     if (!total) {
       return 0;
@@ -34,7 +29,7 @@ export function App() {
     return Number(((good / total) * 100).toFixed(2));
   };
 
-  const total = countTotalFeedback();
+  const total = good + bad + neutral;
   const positivePercentage = countPositiveFeedbackPercentage(total);
 
   return (
